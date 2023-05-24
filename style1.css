@@ -1,0 +1,435 @@
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+* {
+   margin: 0;
+   padding: 0;
+   font: inherit;
+}
+img,
+picture,
+svg,
+video {
+   display: block;
+   max-width: 100%;
+}
+input,
+select,
+textarea {
+   background-color: transparent;
+   outline: none;
+}
+.phanmua {
+   cursor: pointer;
+   background-color: transparent;
+   outline: none;
+   border: 0;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   min-height: 100vh;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1;
+   background-color: white;
+}
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem;
+}
+
+.phiatren {
+   width: 100%;
+   margin-left: 50px;
+}
+
+.phiatren-logo {
+   width: 15rem;
+}
+
+.header-center {
+   display: flex;
+   width: min(90%, 80rem);
+   align-items: center;
+   gap: 1rem;
+}
+
+.header-center-category {
+   display: flex;
+   align-items: center;
+   color:gray;
+   font-size: 40px;
+}
+
+.category-grid {
+   font-size: 3.5rem;
+}
+
+.header-center-search-bar {
+   display: flex;
+   width: 100%;
+   height: 4rem;
+   border: 1px solid gray;
+   border-radius: 1rem;
+   align-items: center;
+   padding: 0.5rem;
+}
+
+.header-center-search-bar input {
+   width: 100%;
+   padding-left: 20px;
+   border: none;
+   font-size: 1.2rem;
+   opacity: 0.5;
+}
+
+.header-center-search-bar .icon-search {
+   color: white;
+   font-size: 1.4rem;
+   padding: 0.8rem 2rem;
+   border-radius: 0.75rem;
+   background-color: red;
+}
+
+.header-left {
+   display: flex;
+   gap: 2rem;
+   color: gray;
+}
+
+.header-left > div {
+   text-align: center;
+}
+
+.header-left .text {
+   font-size: 1.4rem;
+   padding-top: 0.5rem;
+}
+
+.header-left button .icon {
+   position: relative;
+}
+
+.header-left .button .icon::after {
+   content: "0";
+   font-size: 1rem;
+   position: absolute;
+   top: -5px;
+   background-color: red;
+   padding: 0.2rem 0.4rem;
+   border-radius: 50%;
+   color: white;
+}
+
+.co {
+   display: flex;
+   padding: 0.2rem 0.5rem;
+   border: 1px solid gray;
+   border-radius: 0.5rem;
+   align-items: center;
+}
+.co img {
+   width: 3rem;
+}
+
+main {
+   padding: 0.5rem 2rem;
+   background-color: rgb(211, 210, 210);
+}
+
+.danhmuc {
+   display: flex;
+   padding: 0.5rem 0;
+   gap: 0.5rem;
+}
+
+.product {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   column-gap: 10rem;
+   background-color:rgba(128, 128, 128, 0.911);
+   padding: 2rem 2rem;
+}
+
+.product-image .item > img {
+   width: 10rem;
+   margin-bottom: 2rem;
+}
+
+.product-image {
+   width: 50rem;
+   height: 45rem;
+   position: relative;
+}
+
+.item {
+   display: inline-block;
+}
+
+.img-hover {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 15rem;
+}
+
+.item:hover > .img-hover {
+   display: block;
+   width: 40rem;
+}
+
+.text-blue {
+   color: rgb(76, 127, 255);
+   font-weight: bold;
+}
+
+.dong1 b {
+   font-weight: bold;
+}
+
+.dong1 span {
+   margin-bottom: 0.5rem;
+}
+
+.dong1 .dong2 {
+   font-size: 2.4rem;
+   margin-bottom: 1.5rem;
+   color: red;
+}
+
+.dong1 .text {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-bottom: 1.5rem;
+}
+
+.dong3 {
+   color: rgb(250, 190, 71);
+   margin-bottom: 1.5rem;
+}
+
+.dong4 {
+   display: flex;
+   max-width: 30rem;
+   font-size: 2.8rem;
+   font-weight: bold;
+   color: red;
+   align-items: center;
+   gap: 20px;
+   margin-bottom: 2rem;
+}
+
+.dong4 span {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.dong4 span:after {
+   content: "699.000 đ";
+   font-size: 1.4rem;
+   color: black;
+   font-weight: normal;
+   text-decoration: line-through;
+}
+
+.dong4 .nhan {
+   display: inline-block;
+   font-size: 1.2rem;
+   color: white;
+   background-color: red;
+   padding: 0.5rem;
+   border-radius: 5px;
+}
+
+.dong5 {
+   margin-bottom: 2rem;
+}
+
+.dong5 span:first-child {
+   margin-right: 3rem;
+}
+
+.dong5 span:nth-child(2) {
+   margin-right: 1rem;
+}
+
+.soluong {
+   display: flex;
+   width: 20rem;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+}
+
+.product .soluong .text {
+   display: inline;
+   font-weight: bold;
+   margin-right: 30px;
+}
+
+.soluong .phanmua {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   gap: 2rem;
+   border: 1px gray solid;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   
+}
+
+.soluong .phanmua span {
+   margin-bottom: inherit;
+   color: gray;
+}
+
+.phanmua .add-cart {
+   width: 22rem;
+   color: red;
+   font-weight: bold;
+   border: 2px solid red;
+   padding: 1rem 2rem;
+   border-radius: 6px;
+   margin-left: 2rem;
+}
+
+.phanmua .add-cart i {
+   padding-right: 1rem;
+}
+
+.phanmua .buy {
+   width: 22rem;
+   color: white;
+   background-color: red;
+   font-weight: bold;
+   padding: 1rem 2rem;
+   border-radius: 6px;
+   border: 2px solid red;
+   margin-left: 0.5rem;
+}
+.share1{
+   background-color: rgb(238, 238, 238);
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   float: right;
+   position: absolute;
+   right: 30px;
+   color:red;
+   padding: 0.5rem;
+  
+
+}
+.benphai{
+   padding: 10px;
+   gap: 10px;
+   background-color: gray;
+   display: grid;
+   text-align: center;
+   position: absolute;
+   right: 0px;
+   border-radius: 5px 0 0 5px;
+   color: white;
+}
+
+@media screen and (max-width: 768px) {
+   .brand {
+      display: none;
+   }
+   .header {
+      flex-wrap: wrap;
+   }
+   .phiatren-logo {
+      width: 100%;
+   }
+   .phiatren-logo img {
+      width: 10rem;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .header-center {
+      width: 70vw;
+   }
+
+   .header-center i {
+      color: red;
+   }
+   .header-center .header-center-search-bar {
+      border-color: red;
+   }
+   .header-center .category-down,
+   .icon-search {
+      display: none;
+   }
+   .header-left {
+      width: 20vw;
+      color: red;
+   }
+   .header-left .thongbao,
+   .co {
+      display: none;
+   }
+
+   .header-left .button .icon::after {
+      background-color: rgb(45, 216, 29);
+   }
+
+   .product {
+      display: block;
+   }
+
+   .product-image .item .img {
+      display: none;
+   }
+   .item {
+      pointer-events: none;
+      width: 100%;
+   }
+   .product-image .item > img {
+      display: block;
+      width: 40rem;
+   }
+
+   .product-image .item img {
+      opacity: 0;
+      -webkit-animation: slowFade 9s infinite;
+      animation: slowFade 9s infinite;
+   }
+   .product-image .item:nth-child(1) img {
+      -webkit-animation-delay: 3s;
+      animation-delay: 3s;
+   }
+   .product-image .item:nth-child(3) img {
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s;
+   }
+   .product-image .item:nth-child(5) img {
+      -webkit-animation-delay: 9s;
+      animation-delay: 9s;
+   }
+
+    @keyframes slowFade {
+      25% {
+         opacity: 1;
+      }
+      40% {
+         opacity: 0;
+      }
+   }
+}
+
+@media screen and(max-width:920px) {
+   .header{
+      background-color: rgb(71, 71, 236);
+      width: 900px;
+   }
+}

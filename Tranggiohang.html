@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Trang Giỏ Hàng</title>
+  <style>
+    *{
+      padding: auto;
+      margin: auto;
+      font-family: "Roboto",sans-serif;
+    }
+    header{
+      width: 1500x;    
+      height: 300px;
+    } 
+    .giua{
+        width: 1500px;
+        height: 70px;
+        background-color: #333;
+        color: #fff;
+        font-size: 50px;
+      }
+    .container{
+      width: 1500px;
+      margin: 0 auto;
+      background-color: rgb(252, 250, 250)  
+    }
+    header img{
+      padding-left: 0px;
+
+    }
+    nav{
+      width: 1500px;
+      height: 35px;
+      background: rgb(17, 68, 223);
+      margin-bottom: 5px;
+    }
+    nav .menu ul{
+      list-style: none;
+
+    }
+    nav .menu ul li{
+      float: left;
+      line-height: 35px;
+      padding: 0 100px;
+    }
+    nav .menu ul li a{
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    table {
+			margin: auto;
+			border-collapse: collapse;
+			border: none;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+			background-color: #ffffff;
+            margin-top: 50px;
+		}
+		table th, table td {
+			padding: 10px;
+			text-align: center;
+			border: none;
+			border-bottom: 1px solid #e0e0e0;
+		}
+		table th {
+			background-color: #f9f9f9;
+			font-size: 16px;
+			font-weight: bold;
+			color: #333333;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		table td {
+			font-size: 14px;
+			color: #555555;
+		}
+		table input[type="number"] {
+			width: 50px;
+			padding: 5px;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			text-align: center;
+			outline: none;
+			background-color: #f9f9f9;
+		}
+		button {
+			display: block;
+			margin: 20px auto;
+			padding: 10px 30px;
+			background-color: #333333;
+			color: #ffffff;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+			font-size: 16px;
+			font-weight: bold;
+			letter-spacing: 2px;
+			transition: background-color 0.3s ease-out;
+		}
+		button:hover {
+			background-color: #555555;
+		}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#"><img src="logo.jpg" alt="" width="1500px" height="230px"></a>
+    </header>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Trang Chủ</a></li>
+          <li><a href="#">Giới Thiệu</a></li>
+          <li><a href="#">Cẩm Nang</a></li>
+          <li><a href="#">Tin Tức</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div  class="giua">
+      <p style="text-align: center;">Giỏ Hàng</p>
+    </div>
+      <div id="slide">
+        <table>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Giá tiền</th>
+                <th>Số lượng</th>
+                <th>Tổng cộng</th>
+            </tr>
+            <tr>
+                <td><img src="https://khomohinh.com/wp-content/uploads/2022/09/mo-hinh-luffy-nika-gear-5-chien-dau-30cm-anime-one-piece-4.jpg.webp" width="200px"></td>
+                <td>899.000đ</td>
+                <td><input type="number" min="1" max="10" value="1"></td>
+                <td>899.000đ</td>
+            </tr>
+            <tr>
+                <td><img src="https://xuhishop.vn/upload/products/6401612167173_xuhi/super-saiyan-2.jpg" width="200px"></td>
+                <td>999.000đ</td>
+                <td><input type="number" min="1" max="10" value="1"></td>
+                <td>999.000đ</td>
+            </tr>
+            <tr>
+                <td><img src="https://tabmohinh.com/wp-content/uploads/2019/10/M%C3%B4-h%C3%ACnh-Bandai-Gundam-MG-ZGMF-X20A-Strike-Freedom-Full-Burst-Mode-14.jpg" width="200px"></td>
+                <td>3.499.000đ</td>
+                <td><input type="number" min="1" max="10" value="1"></td>
+                <td>3.499.000đ</td>
+            </tr>
+        </table>
+        <br>
+        <button>Đặt hàng</button>
+      </div>
+      <div id="footer">
+        <div id="phia tren"></div>
+        <div class="box">
+            <div class="logo">
+                <img src="logo.jpg" width="100px">
+            </div>
+            <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="">Cẩm Nang</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên hệ</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>LIÊN HỆ</h3>
+            <form action="">
+              <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+    </div>
+</div>
+  </div>
+</body>
+</html>
